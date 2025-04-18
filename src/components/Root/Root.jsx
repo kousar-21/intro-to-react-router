@@ -19,3 +19,10 @@ const Root = () => {
 };
 
 export default Root;
+
+
+/**
+ * 1.use : userPromise> suspense > promise > use(usersPromise)
+ * 2.[less used so far] > useState + useEffect (()=>{},[])
+ * 3.set loader in the route definition: load data before router component is rendered
+ * */ 
