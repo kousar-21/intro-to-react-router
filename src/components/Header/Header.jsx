@@ -17,7 +17,10 @@ const Header = () => {
                 <Link to="/">Home</Link>
             </nav> */}
             <nav>
-                <NavLink to="/">Home</NavLink>
+                <NavLink to="/">
+                    {({ isPending }) => (
+                        <span>Home{isPending && <spinner />}</span>
+                    )}</NavLink>
                 <NavLink to="/mobiles">Mobiles</NavLink>
                 <NavLink to="/laptop">laptop</NavLink>
                 <NavLink to="/users">Users</NavLink>
